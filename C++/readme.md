@@ -70,3 +70,80 @@ than or equal to `n`. For example:
 [Wikipedia](https://en.wikipedia.org/wiki/Factorial)
 
 N DIGIT FIBONACCI NUMBER: This function returns the number of digits in nth Fibonacci number after ceiling it
+
+# Palindrome
+
+
+
+
+
+```
+
+
+1.First get the input for the string;
+
+
+2.Initialise 1 variable with value 0 and another variable with value size-1 
+
+
+3.Then put those variable in for loop and create a temprorary variable and give the value 0
+
+
+4.check for the condition string[j]!=string[i]
+
+
+5.If true update the value of temproray variable 
+
+
+6.At last add the codition if temproray variable==0 then print output as palindrome
+
+
+
+
+
+```
+=======
+
+# Palindrome
+
+1.First get the input for the string;
+2.Initialise 1 variable with value 0 and another variable with value size-1
+3.Then put those variable in for loop and create a temprorary variable and give the value 0
+4.check for the condition string[j]!=string[i]
+5.If true update the value of temproray variable
+6.At last add the codition if temproray variable==0 then print output as palindrome
+
+=======
+
+# 0/1 Knapsack problem
+```
+Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. In other words, given two integer arrays val[0..n-1] and wt[0..n-1] which represent values and weights associated with n items respectively. Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
+```
+[Wikipedia](https://en.wikipedia.org/wiki/Knapsack_problem)
+[GeeksForGeeks](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10)
+
+
+=======
+
+# Coin Change Problem
+You are given with m coins of different denominations S = {S1, S2, ..., Sm}. You have infinite supply of each type of coin.
+Your task is to find the number of ways in which a total of N cents be generated.
+
+1.Input m
+2.Input the array S.
+3.Input N.
+4.Take an array dp[m+1] and initialise it to 0
+5.dp[0]=1
+6.i=0
+7.Repeat steps 8-12 till i<N
+8.j=S[i]
+9.Repeat steps 10-11 till j<=M
+10.dp[j]=dp[j]+dp[j-S[i]]
+11.j=j+1
+12.i=i+1
+13.Print dp[M]
+
+=======
+
+# Counting Sort
+An integer sorting algorithm that is in O(n+k) complexity where k is the magnitude of the range of values to be sorted.
